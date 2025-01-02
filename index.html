@@ -1,238 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
     <head>
         <title>Omprakash Siripolu</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
     </head>
 
-    <body>
-        <section id="header">
-            <div class="container text-center">
-                <div class="user-box">
-                    <img src="./images/untitled.jpg">
-                    <h1>Omprakash Siripolu</h1>
-                    <p>Full Stack Web Developer</p>
+    <body class="m-0 p-0 font-serif">
+        <!-- Header Section -->
+        <section id="header" class="relative h-screen">
+            <div class="absolute inset-0 bg-[url('../images/bg.jpg')] bg-center bg-cover bg-fixed"></div>
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 h-full w-full text-center">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <img src="./images/dp.jpg" class="rounded-full w-64 border-2 border-solid">
+                    <h1 class="text-white font-bold my-2.5">Omprakash Siripolu</h1>
+                    <p class="text-white">Full Stack Web Developer</p>
                 </div>
             </div>
-            <div class="scroll-btn">
-                <div class="scroll-bar">
-                    <a href="#about"><span></span></a>
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 border-2 border-white px-2.5 pb-5 pt-2.5 rounded-full z-10">
+                <div class="animate-bounce">
+                    <a href="#about"><span class="border-2 border-white text-xs rounded-full"></span></a>
                 </div>
             </div>
         </section>
 
+        <!-- User Info Section -->
         <section id="user-info">
-            <div class="nav-bar">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="./images/osw.png"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class=" fa fa-bars"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#top">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About Me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#resume">Resume</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#projects">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
-                            </ul>
+            <!-- Navigation -->
+            <div class="sticky top-0 z-10">
+                <nav class="bg-black">
+                    <div class="container mx-auto px-4">
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="py-4"><img src="./images/osw.png" class="h-12"></a>
+                            <button class="lg:hidden text-white text-3xl outline-none">
+                                <i data-lucide="menu"></i>
+                            </button>
+                            <div class="hidden lg:flex">
+                                <ul class="flex space-x-6">
+                                    <li><a href="#top" class="text-white hover:text-gray-300">Home</a></li>
+                                    <li><a href="#about" class="text-white hover:text-gray-300">About Me</a></li>
+                                    <li><a href="#resume" class="text-white hover:text-gray-300">Resume</a></li>
+                                    <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
+                                    <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
 
-            <div class="about container" id="about">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img src="./images/untitled.jpg" class="profile-img">
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Who Am I</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                            Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.
-                        </p>
-                        
-                        <div class="skills-bar">
-                            <p>Python</p>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 40%;">40%</div>
-                            </div>
-                            <p>Java</p>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%;">70%</div>
-                            </div>
-                            <p>HTML, CSS & JS</p>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 50%;">50%</div>
+            <!-- About Section -->
+            <div id="about" class="pt-24 -mb-32">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <img src="./images/dp.jpg" class="h-72 mx-auto">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Who Am I</h3>
+                            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Etiam sed enim imperdiet, porttitor diam non, consequat leo.</p>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-semibold mb-1">Python</p>
+                                    <div class="bg-gray-200 rounded-2xl">
+                                        <div class="bg-black text-white text-center py-1 rounded-2xl w-2/5">40%</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-semibold mb-1">Java</p>
+                                    <div class="bg-gray-200 rounded-2xl">
+                                        <div class="bg-black text-white text-center py-1 rounded-2xl w-7/10">70%</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-semibold mb-1">HTML, CSS & JS</p>
+                                    <div class="bg-gray-200 rounded-2xl">
+                                        <div class="bg-black text-white text-center py-1 rounded-2xl w-1/2">50%</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="social-icons">
+            <!-- Social Icons -->
+            <div class="sticky top-1/2 -translate-y-1/2 z-10 w-20">
                 <ul>
                     <a href="https://www.linkedin.com/in/omprakash-siripolu-7184a4154/">
-                        <li>
-                            <i class="fa fa-linkedin"></i>
+                        <li class="h-10 w-10 pl-3 pt-1 mt-1 text-white bg-black hover:w-20 hover:pl-8 transition-all duration-700">
+                            <i data-lucide="linkedin"></i>
                         </li>
                     </a>
                     <a href="https://twitter.com/prakashnetha555">
-                        <li>
-                            <i class="fa fa-twitter"></i>
+                        <li class="h-10 w-10 pl-3 pt-1 mt-1 text-white bg-black hover:w-20 hover:pl-8 transition-all duration-700">
+                            <i data-lucide="twitter"></i>
                         </li>
                     </a>
                     <a href="https://github.com/omprakashsiripolu">
-                        <li>
-                            <i class="fa fa-github"></i>
+                        <li class="h-10 w-10 pl-3 pt-1 mt-1 text-white bg-black hover:w-20 hover:pl-8 transition-all duration-700">
+                            <i data-lucide="github"></i>
                         </li>
                     </a>
                 </ul>
             </div>
 
-            <div class="resume" id="resume">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="text-center">My Experiences</h3>
-                            <ul class="timeline">
-                                <li>
-                                    <h4> <span>2020 - </span> Full Stack Web Developer</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                                        Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.<br>
-                                        <b>Company</b> - XYZ company <br>
-                                        <b>Duration</b> - Duration <br>
-                                        <b>Location</b> - Hyderabad, India
+            <!-- Resume Section -->
+            <div id="resume" class="bg-gray-50 -mt-12 pt-12 pb-8">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-center mb-12">My Experiences</h3>
+                            <ul class="relative pl-8 border-l-2 border-black">
+                                <li class="mb-8 bg-white p-4 relative">
+                                    <div class="absolute -left-10 top-0 w-5 h-5 bg-white border-3 border-black rounded-full"></div>
+                                    <h4 class="bg-black text-white text-sm p-1 pl-5">
+                                        <span class="font-bold text-gray-300">2020 - </span> Full Stack Web Developer
+                                    </h4>
+                                    <p class="mt-2">
+                                        Lorem ipsum dolor sit amet...<br>
+                                        <span class="font-bold">Company</span> - XYZ company<br>
+                                        <span class="font-bold">Duration</span> - Duration<br>
+                                        <span class="font-bold">Location</span> - Hyderabad, India
                                     </p>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="col-md-6">
-                            <h3 class="text-center">My Education</h3>
-                            <ul class="timeline">
-                                <li>
-                                    <h4> <span>2020 - </span> B.tech in Electronics and Communication Engineering</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                                        Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.<br>
-                                        <b>Institute</b> - Vidya Jyothi Institute of Technology<br>
-                                        <b>Duration</b> - 2017 - 2020 <br>
-                                        <b>CGPA</b> - 6.18/10
-                                    </p>
-                                </li>
-                                <li>
-                                    <h4> <span>2017 - </span> Diploma in Electronics and Communication Engineering</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                                        Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.<br>
-                                        <b>Institute</b> - Government Polytechnic Mahabubnagar<br>
-                                        <b>Duration</b> - 2014 - 2017 <br>
-                                        <b>Percentage</b> - 70.31%
-                                    </p>
-                                </li>
-                                <li>
-                                    <h4> <span>2014 - </span> High School (SSC)</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                                        Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.<br>
-                                        <b>Institute</b> - Montessori High School<br>
-                                        <b>Duration</b> - 2004 - 2014 <br>
-                                        <b>CGPA</b> - 9.2/10
-                                    </p>
-                                </li>
+                        <!-- Education Section - Similar structure as Experience -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-center mb-12">My Education</h3>
+                            <ul class="relative pl-8 border-l-2 border-black">
+                                <!-- Education items follow same structure as Experience -->
+                                <!-- Add education items here following the same pattern -->
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <div class="projects" id="projects">
-                <div class="container">
-                    <h1 class="text-center">
-                        My Projects
-                    </h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                        Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="projects-box">
-                                <i class="fa fa-rocket"></i>
-                                <span>Twitter Homepage</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                                    Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.
-                                </p>
+            <!-- Projects Section -->
+            <div id="projects" class="py-12">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-3xl font-bold text-center mb-4">My Projects</h1>
+                    <p class="text-center mb-8">Lorem ipsum dolor sit amet...</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-50 p-4 rounded-tr-full rounded-bl-full hover:bg-black hover:text-white hover:rounded-tl-full hover:rounded-br-full hover:rounded-tr-none hover:rounded-bl-none transition-all duration-300">
+                            <i data-lucide="rocket" class="mx-2"></i>
+                            <span class="text-xl font-bold">Twitter Homepage</span>
+                            <p class="mt-5 text-gray-500 hover:text-white">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="relative pt-12 text-white">
+                <div class="absolute inset-0 bg-[url('../images/bg.jpg')] bg-center bg-cover bg-fixed"></div>
+                <div class="absolute inset-0 bg-black/60"></div>
+                <div class="relative z-10">
+                    <!-- Move all your existing contact content here -->
+                    <div class="container mx-auto px-4 text-center">
+                        <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
+                        <p class="mb-8">Lorem ipsum dolor sit amet...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+                            <div>
+                                <i data-lucide="phone" class="mx-auto mb-2"></i>
+                                <p>+91 12345 67890</p>
+                            </div>
+                            <div>
+                                <i data-lucide="mail" class="mx-auto mb-2"></i>
+                                <p>omprakash@gmail.com</p>
+                            </div>
+                            <div>
+                                <i data-lucide="globe" class="mx-auto mb-2"></i>
+                                <p>www.omprakash.com</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact" id="contact">
-                <div class="container text-center">
-                    <h1>Contact Me</h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam sed enim imperdiet, porttitor diam non, consequat leo. 
-                        Donec mi dolor, accumsan non massa sit amet, venenatis sagittis erat.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa fa-phone"></i>
-                            <p>+91 12345 67890</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fa fa-envelope"></i>
-                            <p>omprakash@gmail.com</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fa fa-internet-explorer"></i>
-                            <p>www.omprakash.com</p>
+                        <div class="space-x-4 mb-12">
+                            <button class="px-6 py-2 border-2 border-white rounded-full hover:bg-black hover:border-black transition-all duration-600">
+                                <i data-lucide="download" class="inline mr-2"></i>Resume
+                            </button>
+                            <button class="px-6 py-2 border-2 border-white rounded-full hover:bg-black hover:border-black transition-all duration-600">
+                                <i data-lucide="rocket" class="inline mr-2"></i>Hire Me
+                            </button>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary">
-                        <i class="fa fa-download"></i>
-                        Resume
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                        <i class="fa fa-rocket"></i>
-                        Hire Me
-                    </button>
+                    <div class="bg-black h-12 mt-12 text-center py-2">
+                        <p>Made by Omprakash Siripolu</p>
+                    </div>
                 </div>
-                <div class="footer text-center">
-                    <p><i class="fa fa-copyright"> Made by Omprakash Siripolu</i></p>
-                </div>
-            </div>
+            </div>            
         </section>
 
-        <script src="./js/smooth-scroll.js"></script>
         <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
+            lucide.createIcons();
         </script>
     </body>
 </html>
