@@ -4,18 +4,28 @@
         <title>Omprakash Siripolu</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
+        <style>
+            html {
+                scroll-padding-top: 3rem; /* This ensures content doesn't hide under the navbar */
+            }
+        </style>
     </head>
 
     <body class="m-0 p-0 font-serif">
         <!-- Header Section -->
         <section id="header" class="relative h-screen">
-            <div class="absolute inset-0 bg-[url('../images/bg.jpg')] bg-center bg-cover bg-fixed"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80')] bg-center bg-cover bg-fixed"></div>
             <div class="absolute inset-0 bg-black/60"></div>
-            <div class="relative z-10 h-full w-full text-center">
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <img src="./images/dp.jpg" class="rounded-full w-64 border-2 border-solid">
-                    <h1 class="text-white font-bold my-2.5">Omprakash Siripolu</h1>
+            <div class="relative z-10 h-full w-full flex items-center justify-center">
+                <div class="text-center">
+                    <img src="./images/dp.jpg" class="rounded-full w-64 h-64 mx-auto object-cover border-2 border-white">
+                    <h1 class="text-white text-3xl font-bold mt-3 mb-2">Omprakash Siripolu</h1>
                     <p class="text-white">Full Stack Web Developer</p>
+                </div>
+                <div class="absolute bottom-4 right-4">
+                    <button class="px-6 py-2 border-2 border-white rounded-full text-white hover:bg-white hover:text-black transition-all duration-600">
+                        <i data-lucide="download" class="inline mr-2"></i>Resume
+                    </button>
                 </div>
             </div>
             <div class="absolute bottom-8 left-1/2 -translate-x-1/2 border-2 border-white px-2.5 pb-5 pt-2.5 rounded-full z-10">
@@ -39,8 +49,9 @@
                             <div class="hidden lg:flex">
                                 <ul class="flex space-x-6">
                                     <li><a href="#top" class="text-white hover:text-gray-300">Home</a></li>
-                                    <li><a href="#about" class="text-white hover:text-gray-300">About Me</a></li>
-                                    <li><a href="#resume" class="text-white hover:text-gray-300">Resume</a></li>
+                                    <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+                                    <li><a href="#experience" class="text-white hover:text-gray-300">Experience</a></li>
+                                    <li><a href="#skills" class="text-white hover:text-gray-300">Skills</a></li>
                                     <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
                                     <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
                                 </ul>
@@ -51,145 +62,339 @@
             </div>
 
             <!-- About Section -->
-            <div id="about" class="pt-24 -mb-32">
+            <section id="about" class="py-12">
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="text-center">
                             <img src="./images/dp.jpg" class="h-72 mx-auto">
                         </div>
                         <div>
+                            <h3>About Me</h3>
                             <h3 class="text-2xl font-bold mb-4">Who Am I</h3>
-                            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Etiam sed enim imperdiet, porttitor diam non, consequat leo.</p>
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <p class="font-semibold mb-1">Python</p>
-                                    <div class="bg-gray-200 rounded-2xl">
-                                        <div class="bg-black text-white text-center py-1 rounded-2xl w-2/5">40%</div>
+                            <p class="mb-6">Experienced Software Developer with a strong background in developing and deploying scalable, secure, and user-friendly web applications.
+                                Proficient in Java, Spring Boot, React.js, and cloud technologies like Azure. Skilled in multi-tenant SaaS application development, database
+                                management, role-based access control, and implementing robust authentication mechanisms. Adept at optimizing migration processes,
+                                creating interactive dashboards, and enhancing user experience through effective UI/UX practices. Collaborative team player with a proven
+                                ability to deliver high-quality solutions in fast-paced, Agile environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="bg-gray-50 py-12">
+                <div class="container mx-auto px-4">
+                    <div class="flex items-center justify-center gap-3 mb-12">
+                        <span class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center">
+                            <i data-lucide="briefcase"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold">Experiences</h3>
+                    </div>
+            
+                    <div class="max-w-6xl mx-auto relative">
+                        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gray-200"></div>
+            
+                        <!-- Experience 1 -->
+                        <div class="relative mb-12">
+                            <div class="flex items-center justify-center">
+                                <div class="w-1/2 pr-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                                        <span class="text-sm font-semibold text-gray-500">October 2024 - Present</span>
+                                        <h4 class="text-xl font-bold text-gray-800 mt-2">Software Engineer</h4>
+                                        <p class="text-gray-600 mt-2">Aixlerators</p>
+                                        <p class="text-gray-500 mt-2">Developing a schema-based multi-tenant SaaS application using Spring Boot and React.js, enabling seamless migration between integration platforms.</p>
+                                        <div class="flex flex-wrap gap-2 mt-3">
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Spring Boot</span>
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">React.js</span>
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Azure</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <p class="font-semibold mb-1">Java</p>
-                                    <div class="bg-gray-200 rounded-2xl">
-                                        <div class="bg-black text-white text-center py-1 rounded-2xl w-7/10">70%</div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-black z-10"></div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-3">Key Achievements</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li class="flex items-start">
+                                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5"></i>
+                                                <span>Implemented dynamic tenant management for secure data isolation.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5"></i>
+                                                <span>Developed interactive dashboards for migration statistics visualization.</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div>
-                                    <p class="font-semibold mb-1">HTML, CSS & JS</p>
-                                    <div class="bg-gray-200 rounded-2xl">
-                                        <div class="bg-black text-white text-center py-1 rounded-2xl w-1/2">50%</div>
+                            </div>
+                        </div>
+            
+                        <!-- Experience 2 -->
+                        <div class="relative mb-12">
+                            <div class="flex items-center justify-center">
+                                <div class="w-1/2 pr-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-3">Key Achievements</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li class="flex items-start">
+                                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5"></i>
+                                                <span>Optimized migration processes, reducing time by 75%.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5"></i>
+                                                <span>Implemented file upload functionality with progress tracking.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-black z-10"></div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                                        <span class="text-sm font-semibold text-gray-500">August 2022 - September 2024</span>
+                                        <h4 class="text-xl font-bold text-gray-800 mt-2">Software Engineer</h4>
+                                        <p class="text-gray-600 mt-2">Sage IT Inc</p>
+                                        <p class="text-gray-500 mt-2">Migrated TIBCO BW6 projects to Azure Cloud, automated deployments using Kubernetes, and enhanced source code migration efficiency.</p>
+                                        <div class="flex flex-wrap gap-2 mt-3">
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Java</span>
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Spring Boot</span>
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Azure</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Experience 3 -->
+                        <div class="relative">
+                            <div class="flex items-center justify-center">
+                                <div class="w-1/2 pr-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                                        <span class="text-sm font-semibold text-gray-500">April 2022 - June 2022</span>
+                                        <h4 class="text-xl font-bold text-gray-800 mt-2">Software Engineer</h4>
+                                        <p class="text-gray-600 mt-2">Mythri Movie Makers</p>
+                                        <p class="text-gray-500 mt-2">Developed a trip assignment web application with Google Maps API integration and responsive design using React.js and Tailwind CSS.</p>
+                                        <div class="flex flex-wrap gap-2 mt-3">
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">React.js</span>
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Spring Security</span>
+                                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Google Maps API</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-black z-10"></div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-3">Key Achievements</h4>
+                                        <ul class="space-y-2 text-gray-600">
+                                            <li class="flex items-start">
+                                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5"></i>
+                                                <span>Implemented real-time trip management with optimized routing.</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i data-lucide="check-circle" class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5"></i>
+                                                <span>Secured application with JWT and role-based access control.</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Social Icons -->
-            <div class="sticky top-1/2 -translate-y-1/2 z-10 w-20">
-                <ul>
-                    <a href="https://www.linkedin.com/in/omprakash-siripolu-7184a4154/">
-                        <li class="h-10 w-10 pl-3 pt-1 mt-1 text-white bg-black hover:w-20 hover:pl-8 transition-all duration-700">
-                            <i data-lucide="linkedin"></i>
-                        </li>
-                    </a>
-                    <a href="https://twitter.com/prakashnetha555">
-                        <li class="h-10 w-10 pl-3 pt-1 mt-1 text-white bg-black hover:w-20 hover:pl-8 transition-all duration-700">
-                            <i data-lucide="twitter"></i>
-                        </li>
-                    </a>
-                    <a href="https://github.com/omprakashsiripolu">
-                        <li class="h-10 w-10 pl-3 pt-1 mt-1 text-white bg-black hover:w-20 hover:pl-8 transition-all duration-700">
-                            <i data-lucide="github"></i>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-
-            <!-- Resume Section -->
-            <div id="resume" class="bg-gray-50 -mt-12 pt-12 pb-8">
+            <!-- Skills Section -->
+            <section id="skills" class="py-12">
                 <div class="container mx-auto px-4">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-2xl font-bold text-center mb-12">My Experiences</h3>
-                            <ul class="relative pl-8 border-l-2 border-black">
-                                <li class="mb-8 bg-white p-4 relative">
-                                    <div class="absolute -left-10 top-0 w-5 h-5 bg-white border-3 border-black rounded-full"></div>
-                                    <h4 class="bg-black text-white text-sm p-1 pl-5">
-                                        <span class="font-bold text-gray-300">2020 - </span> Full Stack Web Developer
-                                    </h4>
-                                    <p class="mt-2">
-                                        Lorem ipsum dolor sit amet...<br>
-                                        <span class="font-bold">Company</span> - XYZ company<br>
-                                        <span class="font-bold">Duration</span> - Duration<br>
-                                        <span class="font-bold">Location</span> - Hyderabad, India
-                                    </p>
+                    <div class="flex items-center justify-center gap-3 mb-8">
+                        <span class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center">
+                            <i data-lucide="brain"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold">Skills</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="layout-template" class="w-6 h-6 mr-2"></i>
+                                <h4 class="text-xl font-bold">Frontend</h4>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i data-lucide="code" class="w-4 h-4 mr-2"></i>
+                                    HTML5, CSS3, JavaScript
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="component" class="w-4 h-4 mr-2"></i>
+                                    React.js, Vue.js
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="palette" class="w-4 h-4 mr-2"></i>
+                                    Tailwind CSS, Bootstrap
                                 </li>
                             </ul>
                         </div>
-
-                        <!-- Education Section - Similar structure as Experience -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-center mb-12">My Education</h3>
-                            <ul class="relative pl-8 border-l-2 border-black">
-                                <!-- Education items follow same structure as Experience -->
-                                <!-- Add education items here following the same pattern -->
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="server" class="w-6 h-6 mr-2"></i>
+                                <h4 class="text-xl font-bold">Backend</h4>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i data-lucide="box" class="w-4 h-4 mr-2"></i>
+                                    Node.js, Express.js
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="file-code" class="w-4 h-4 mr-2"></i>
+                                    Python, Django
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="database" class="w-4 h-4 mr-2"></i>
+                                    SQL, MongoDB
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="wrench" class="w-6 h-6 mr-2"></i>
+                                <h4 class="text-xl font-bold">Tools</h4>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i data-lucide="git-branch" class="w-4 h-4 mr-2"></i>
+                                    Git, GitHub
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="code-2" class="w-4 h-4 mr-2"></i>
+                                    VS Code, PyCharm
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="container" class="w-4 h-4 mr-2"></i>
+                                    Docker, Jenkins
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="cloud" class="w-6 h-6 mr-2"></i>
+                                <h4 class="text-xl font-bold">Cloud</h4>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i data-lucide="server" class="w-4 h-4 mr-2"></i>
+                                    AWS EC2, S3
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="database" class="w-4 h-4 mr-2"></i>
+                                    RDS, DynamoDB
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="layers" class="w-4 h-4 mr-2"></i>
+                                    Lambda, API Gateway
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Projects Section -->
-            <div id="projects" class="py-12">
+            <section id="projects" class="bg-gray-50 py-12">
                 <div class="container mx-auto px-4">
-                    <h1 class="text-3xl font-bold text-center mb-4">My Projects</h1>
-                    <p class="text-center mb-8">Lorem ipsum dolor sit amet...</p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-gray-50 p-4 rounded-tr-full rounded-bl-full hover:bg-black hover:text-white hover:rounded-tl-full hover:rounded-br-full hover:rounded-tr-none hover:rounded-bl-none transition-all duration-300">
-                            <i data-lucide="rocket" class="mx-2"></i>
-                            <span class="text-xl font-bold">Twitter Homepage</span>
-                            <p class="mt-5 text-gray-500 hover:text-white">Lorem ipsum dolor sit amet...</p>
+                    <div class="flex items-center justify-center gap-3 mb-8">
+                        <span class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center">
+                            <i data-lucide="rocket"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold">Projects</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        <div class="bg-white p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="rocket" class="w-6 h-6 mr-2"></i>
+                                <h4 class="text-xl font-bold">Twitter Homepage</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet...</p>
+                            <div class="flex space-x-4">
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Node.js</span>
+                            </div>
+                        </div>
+                        <!-- Add more project cards as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="py-12">
+                <div class="container mx-auto px-4">
+                    <div class="flex items-center justify-center gap-3 mb-8">
+                        <span class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center">
+                            <i data-lucide="graduation-cap"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold">Education</h3>
+                    </div>
+                    <div class="mx-auto space-y-6">
+                        <div class="group relative bg-white rounded-lg shadow-md hover:shadow-xl 
+                            transition-all duration-500 ease-in-out transform hover:-translate-y-1
+                            before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 
+                            before:w-1 before:bg-black before:rounded-l-lg before:transition-all
+                            before:duration-500 hover:before:w-2">
+                            <div class="p-6">
+                                <div class="flex flex-wrap items-center justify-between mb-4">
+                                    <span class="px-3 py-1 text-sm font-semibold text-white bg-black rounded-full">
+                                        2016 - 2020
+                                    </span>
+                                    <span class="text-sm text-gray-600">Bachelor of Technology</span>
+                                </div>
+                                <h4 class="text-xl font-bold mb-2 group-hover:text-black transition-colors">
+                                    Computer Science and Engineering
+                                </h4>
+                                <p class="text-gray-600 mb-2">
+                                    <span class="font-semibold">University:</span> Your University Name
+                                </p>
+                                <span class="text-sm text-gray-600">
+                                    📍 City, Country
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Contact Section -->
             <div id="contact" class="relative pt-12 text-white">
-                <div class="absolute inset-0 bg-[url('../images/bg.jpg')] bg-center bg-cover bg-fixed"></div>
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80')] bg-center bg-cover bg-fixed"></div>
                 <div class="absolute inset-0 bg-black/60"></div>
                 <div class="relative z-10">
-                    <!-- Move all your existing contact content here -->
                     <div class="container mx-auto px-4 text-center">
-                        <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
-                        <p class="mb-8">Lorem ipsum dolor sit amet...</p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+                        <h1 class="text-xl mb-2">Contact</h1>
+                        <h2 class="text-3xl font-bold mb-2">Get In Touch</h2>
+                        <p class="mb-4">I'm always open to new opportunities and collaborations.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 mb-8">
                             <div>
-                                <i data-lucide="phone" class="mx-auto mb-2"></i>
+                                <i data-lucide="phone" class="mx-auto mb-2 w-8 h-8"></i>
                                 <p>+91 12345 67890</p>
                             </div>
                             <div>
-                                <i data-lucide="mail" class="mx-auto mb-2"></i>
+                                <i data-lucide="mail" class="mx-auto mb-2 w-8 h-8"></i>
                                 <p>omprakash@gmail.com</p>
                             </div>
                             <div>
-                                <i data-lucide="globe" class="mx-auto mb-2"></i>
+                                <i data-lucide="globe" class="mx-auto mb-2 w-8 h-8"></i>
                                 <p>www.omprakash.com</p>
                             </div>
                         </div>
-                        <div class="space-x-4 mb-12">
-                            <button class="px-6 py-2 border-2 border-white rounded-full hover:bg-black hover:border-black transition-all duration-600">
-                                <i data-lucide="download" class="inline mr-2"></i>Resume
-                            </button>
-                            <button class="px-6 py-2 border-2 border-white rounded-full hover:bg-black hover:border-black transition-all duration-600">
-                                <i data-lucide="rocket" class="inline mr-2"></i>Hire Me
-                            </button>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.linkedin.com/in/omprakash-siripolu-7184a4154/" class="text-white hover:text-gray-300">
+                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                            </a>
+                            <a href="https://twitter.com/prakashnetha555" class="text-white hover:text-gray-300">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="https://github.com/omprakashsiripolu" class="text-white hover:text-gray-300">
+                                <i data-lucide="github" class="w-6 h-6"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="bg-black h-12 mt-12 text-center py-2">
+                    <div class="bg-black h-12 mt-8 text-center py-2">
                         <p>Made by Omprakash Siripolu</p>
                     </div>
                 </div>
