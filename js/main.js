@@ -1,5 +1,7 @@
 import { experiences } from './data/experience.js';
+import { skills } from './data/skills.js';
 import { createExperienceItem } from './renderer/experience.js';
+import { createSkillCard } from './renderer/skills.js';
 
 export async function loadComponent(elementId, componentPath) {
     try {
@@ -13,6 +15,16 @@ export async function loadComponent(elementId, componentPath) {
             if (experienceItems) {
                 experienceItems.innerHTML = experiences.map((exp, index) => 
                     createExperienceItem(exp, index)
+                ).join('');
+            }
+        }
+        
+        // If this is the skills component, render the skills
+        if (elementId === 'skills') {
+            const skillsGrid = document.getElementById('skills-grid');
+            if (skillsGrid) {
+                skillsGrid.innerHTML = skills.map(skill => 
+                    createSkillCard(skill)
                 ).join('');
             }
         }
