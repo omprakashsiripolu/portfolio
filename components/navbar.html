@@ -1,11 +1,11 @@
-<!-- Navigation -->
-<nav id="navbar-content" class="bg-black">
+<nav id="navbar-content" class="bg-black relative">
     <div class="container mx-auto px-4">
         <div class="flex justify-between items-center">
             <a href="#" class="py-4"><img src="./images/osw.png" class="h-12"></a>
-            <button class="lg:hidden text-white text-3xl outline-none">
+            <button id="mobile-menu-button" class="lg:hidden text-white text-3xl outline-none">
                 <i data-lucide="menu"></i>
             </button>
+            <!-- Desktop Menu -->
             <div class="hidden lg:flex">
                 <ul class="flex space-x-6">
                     <li><a href="#top" class="text-white hover:text-gray-300">Home</a></li>
@@ -17,6 +17,20 @@
                     <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-full right-24 bg-black border-t border-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-4 text-center">
+            <ul class="py-3 space-y-2">
+                <li><a href="#top" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">Home</a></li>
+                <li><a href="#about" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">About</a></li>
+                <li><a href="#experience" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">Experience</a></li>
+                <li><a href="#skills" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">Skills</a></li>
+                <li><a href="#projects" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">Projects</a></li>
+                <li><a href="#education" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">Education</a></li>
+                <li><a href="#contact" class="block px-4 py-2 text-white hover:bg-gray-800 rounded">Contact</a></li>
+            </ul>
         </div>
     </div>
 </nav>
