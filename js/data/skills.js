@@ -9,9 +9,14 @@ export const skills = [
                 items: ["HTML5/CSS3", "JavaScript", "Tailwind CSS"]
             },
             {
-                name: "Frameworks",
+                name: "Frameworks & State Management",
                 icon: "component",
-                items: ["React.js"]
+                items: ["React.js", "Redux"]
+            },
+            {
+                name: "Testing",
+                icon: "check-circle",
+                items: ["Jest", "React Testing Library"]
             }
         ]
     },
@@ -22,12 +27,22 @@ export const skills = [
             {
                 name: "Core & Frameworks",
                 icon: "box",
-                items: ["Java", "Spring Boot"]
+                items: ["Java 11/17", "Spring Boot (2.x, 3.x)"]
+            },
+            {
+                name: "Security & Authentication",
+                icon: "lock",
+                items: ["Spring Security", "JWT"]
             },
             {
                 name: "Database Management",
                 icon: "database",
-                items: ["MySQL", "Oracle DB"]
+                items: ["MySQL 8"]
+            },
+            {
+                name: "ORM & API Development",
+                icon: "plug",
+                items: ["JPA", "REST APIs"]
             }
         ]
     },
@@ -55,6 +70,11 @@ export const skills = [
                 name: "Compute & Deployment",
                 icon: "server",
                 items: ["Azure Container Apps", "Azure VMs"]
+            },
+            {
+                name: "AI & Cognitive Services",
+                icon: "brain",
+                items: ["Azure Cognitive Services", "Azure Computer Vision"]
             },
             {
                 name: "Serverless & API",

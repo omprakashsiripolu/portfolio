@@ -1,11 +1,11 @@
 export const projects = [
     {
-        title: "Cinemate",
+        title: "Cinebuddy",
         description: "Developed a schema-based multi-tenant SaaS application using Spring Boot and React.js for assigning trips to passengers. Features include optimized driver allocation using Google Maps API, dynamic tenant management with database schema isolation, and secure authentication with JWT.",
         image: "./images/bus.jpg",
         githubUrl: "",
-        liveUrl: "https://thecinemate.in/",
-        technologies: ["React.js", "Spring Boot", "Google Maps API", "Formik", "Tailwind CSS", "Docker", "Azure"]
+        liveUrl: "https://cinebuddy.in/",
+        technologies: ["React.js", "Redux", "Spring Boot", "Google Maps API", "Formik", "Tailwind CSS", "Docker", "Azure", "Azure Cognitive Services", "Azure Computer Vision"]
     },
     {
         title: "SHIP.AI",
@@ -13,6 +13,6 @@ export const projects = [
         image: "./images/work.jpg",
         githubUrl: "",
         liveUrl: "",
-        technologies: ["Java", "Spring Boot", "ChatGPT API", "React.js", "Redux Toolkit", "Tailwind CSS", "Docker", "Azure"]
+        technologies: ["Java 11", "Spring Boot", "ChatGPT API", "React.js", "Redux Toolkit", "Tailwind CSS", "Docker", "Azure"]
     }
 ];
