@@ -6,12 +6,22 @@ export const skills = [
             {
                 name: "Core Technologies",
                 icon: "code",
-                items: ["HTML5/CSS3", "JavaScript", "Tailwind CSS"]
+                items: ["HTML5/CSS3", "JavaScript", "SCSS"]
             },
             {
-                name: "Frameworks & State Management",
+                name: "Frameworks",
                 icon: "component",
-                items: ["React.js", "Redux"]
+                items: ["React.js", "Next.js"]
+            },
+            {
+                name: "UI Libraries & Styling",
+                icon: "layout",
+                items: ["Ant Design", "Tailwind CSS"]
+            },
+            {
+                name: "State Management & Data Fetching",
+                icon: "database",
+                items: ["Redux", "React Query", "Axios"]
             },
             {
                 name: "Testing",
@@ -42,7 +52,12 @@ export const skills = [
             {
                 name: "ORM & API Development",
                 icon: "plug",
-                items: ["JPA", "REST APIs"]
+                items: ["JPA", "Hibernate", "REST APIs"]
+            },
+            {
+                name: "Tools & Libraries",
+                icon: "tool",
+                items: ["Maven", "Lombok"]
             }
         ]
     },

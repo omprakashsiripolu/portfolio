@@ -1,5 +1,21 @@
 export const projects = [
     {
+        title: "SimpliMF",
+        description: "Comprehensive mutual fund distribution portal for Astrat Mutual with KYC verification, secure admin panel, and automated notification system.",
+        image: "./images/simplimf.jpg",
+        githubUrl: "",
+        liveUrl: "https://staging.astratmutual.com/",
+        technologies: ["React.js", "Next.js 15", "TypeScript", "Ant Design", "SCSS", "REST APIs"]
+    },
+    {
+        title: "Destino Furniture Studio",
+        description: "Full-stack e-commerce application for furniture retail company with complete product management, user authentication, and admin dashboard.",
+        image: "./images/destino.jpg",
+        githubUrl: "",
+        liveUrl: "https://destinofurniture.com/",
+        technologies: ["Java 21", "Spring Boot 3.4.2", "React", "Vite", "TailwindCSS", "React Query", "MySQL", "JPA/Hibernate", "Maven", "Lombok"]
+    },
+    {
         title: "Cinebuddy",
         description: "Developed a schema-based multi-tenant SaaS application using Spring Boot and React.js for assigning trips to passengers. Features include optimized driver allocation using Google Maps API, dynamic tenant management with database schema isolation, and secure authentication with JWT.",
         image: "./images/bus.jpg",
